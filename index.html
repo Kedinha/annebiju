@@ -25,6 +25,12 @@
 
     <!-- Custom stylesheet -->
     <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Payment to Paypal -->
+    <script src="https://www.paypal.com/sdk/js?&client-id=<Client-ID>&merchant-id=<Merchant-ID>"></script>
+
+      
+
   </head>
 
   <body>
@@ -45,12 +51,12 @@
 
           </div>
           <div class="col-md-4 col-12 text-center">
-            <h2 class="my-md-3 site-title text-white"> Online Store</h2>
+            <h2 class="my-md-3 site-title text-white"> Anne Biju & Semijoias</h2>
           </div>
           <div class="col-md-4 col-12 text-right">
             <p class="my-md-4 header-links">
-              <a href="#" class="px-2">Sign In</a>
-              <a href="#" class="px-1">Create an Account</a>
+              <a href="#" class="px-2">entrar</a>
+              <a href="#" class="px-1">Criar uma conta</a>
             </p>
           </div>
         </div>
@@ -72,16 +78,16 @@
                 <a class="nav-link" href="#">HOME<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">FEATURES</a>
+                <a class="nav-link" href="#">PEÇAS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">COLLECTION</a>
+                <a class="nav-link" href="#">COLEÇÃO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SHOP</a>
+                <a class="nav-link" href="#">SHOPPING</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
+                <a class="nav-link" href="#">SOBRE</a>
               </li>
             </ul>
 
@@ -175,9 +181,7 @@
 
 
       <hr class="hr" />
-
-
-
+     
       <!-- ------------------ Fectures Section---------------- -->
       <div class="container text-center">
         <div class="features">
@@ -383,6 +387,11 @@
               <small> <s class="text-secondary">$519.99</s></small>
               <span class="text-color">$499.00</span>
             </h4>
+            <div id="smart-button-container">
+              <div style="text-align: center;">
+                <div id="paypal-button-container"></div>
+              </div>
+            </div>
             <div class="cart mt-4 row">
               <div class="col-md-4 col-sm-12 p-0">
                 <button class="border site-btn btn-span bg-primary-color text-white">Add to Card</button>
@@ -856,57 +865,12 @@
             </div>
           </div>
         </div>
-
-      </div>
-
-      <div class="container-fluid news pt-5">
-        <div class="row">
-          <div class="col-md-6 col-12 pl-5">
-            <h4 class="primary-color font-roboto m-0 p-0">
-              Need Help? Call Our Award-Warning
-            </h4>
-            <p class="m-0 p-0 text-secondary">
-              Support Team 24/7 At +1 250-123-4567
-            </p>
-          </div>
-          <div class="col-md-4 col-12 my-md-0 my-3 pl-md-0 pl-5">
-            <input type="text" class="form-control border-0 bg-light" placeholder="Enter Your email Addres">
-          </div>
-          <div class="col-md-2 col-12 my-md-0 my-3 pl-md-0 pl-5">
-            <button class="btn bg-primary-color text-white">Subscribe</button>
+        <div id="smart-button-container">
+          <div style="text-align: center;">
+            <div id="paypal-button-container"></div>
           </div>
         </div>
-      </div>
-
-      <div class="container text-center">
-        <p class="pt-5">
-          <img src="/assets/payment.png" alt="payment image" class="img-fluid">
-        </p>
-        <h6 class="text-secondary py-4"> AK Products &COPY; Anne Flôres. All Rights Reserved.</h6>
-      </div>
-
-    </footer>
-
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"></script>
-
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"></script>
-
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-    <script src="./js/main.js"></script>
+     
   </body>
 
 </html>
