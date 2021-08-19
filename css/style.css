@@ -1,60 +1,60 @@
 /* IMPORT FONTS GOOGLE FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:wght@100&family=Sofia&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Gugi&family=Lato:wght@100&family=Sofia&display=swap");
 
-:root{
---light-gray: #2b3032a1;
---primary-color: #45ccb8;
---border: #2b303218;
---text-color: #ff686b;
---roboto: "Roboto", sans-serif;
---gugi: "Gugi", cursive;
---sofia: "Sofia", cursive;
+:root {
+  --light-gray: #2b3032a1;
+  --primary-color: linear-gradient(120deg, #973200 0%, #d2b23e 100%);
+  --border: #2b303218;
+  --text-color: #ff686b;
+  --roboto: "Roboto", sans-serif;
+  --gugi: "Gugi", cursive;
+  --sofia: "Sofia", cursive;
 }
 
-.primary-color{
+.primary-color {
   color: var(--primary-color);
 }
 
-.bg-primary-color{
-  background-color: var(--primary-color)!important;
+.bg-primary-color {
+  background: var(--primary-color) !important;
 }
 
-.text-color{
+.text-color {
   color: var(--text-color);
 }
 
-.font-roboto{
+.font-roboto {
   font-family: var(--roboto);
 }
 
-.lightblue{
+.lightblue {
   color: lightblue;
 }
 
 /* header */
 
-header{
-  background-color: var(--primary-color);
+header {
+  background: linear-gradient(120deg, #973200 0%, #d2b23e 100%);
   font-family: var(--roboto);
 }
 
-header .site-title{
+header .site-title {
   font-family: var(--gugi);
 }
 
 .container .dropdown-toggle,
-.container .dropdown-item{
+.container .dropdown-item {
   font-size: 0.7em;
   color: var(--light-gray); /*alterado Ak*/
 }
 
 /* criado ak */
-.dropdown-menu{
+.dropdown-menu {
   min-width: 0;
   padding: 0;
 }
 
-.header-links a{
+.header-links a {
   font-size: 0.9rem;
   text-decoration: none;
   color: white;
@@ -62,207 +62,209 @@ header .site-title{
 
 /* Navigation Menu */
 
-.navbar-nav{
+.navbar-nav {
   padding: 0.8em 0em;
 }
 
 .navbar-nav .nav-link {
   font-size: 0.9em;
-  color: var(--light-gray)!important;
-  border: 1px solid var(--border);
+  /* color: var(--light-gray) !important; */
+  border: 1px var(--border);
   border-radius: 4rem;
   margin: 0 0.4rem;
 }
 
-.navbar-nav .nav-link:hover{
-  background-color: var(--primary-color);
+.navbar-nav .nav-link:hover {
+  background: var(--primary-color);
 }
 
 .navbar-nav .nav-item .nav-link {
+  background: linear-gradient(120deg, #973200 0%, #d2b23e 100%) !important;
   padding: 0 1.3em;
+  color: white;
 }
 
-.navbar-nav .basket-icon{
-  margin-right: 6.5rem!important;
+.navbar-nav .basket-icon {
+  margin-right: 6.5rem !important;
 }
 
 /* Slider One */
 
-.site-slider{
+.site-slider {
   position: relative;
 }
 
-.position-top{
-   position: absolute;
-   top: 50%;
-   margin-left: -1rem;
- }
+.position-top {
+  position: absolute;
+  top: 50%;
+  margin-left: -1rem;
+}
 
- .site-slider .slider-btn .prev,
- .site-slider .slider-btn .next {
-  background-color: var(--primary-color);
-  padding: 1rem 1.5rem; 
+.site-slider .slider-btn .prev,
+.site-slider .slider-btn .next {
+  background: var(--primary-color);
+  padding: 1rem 1.5rem;
   border-radius: 10rem;
   color: white;
   margin: 2.6rem 1rem;
   opacity: 0;
   transition: opacity 1s ease;
- }
+}
 
- .site-slider:hover .slider-btn .prev,
- .site-slider:hover .slider-btn .next {
-   opacity: 1;
- }
+.site-slider:hover .slider-btn .prev,
+.site-slider:hover .slider-btn .next {
+  opacity: 1;
+}
 
- .right-0{
-   right: 0;
- }
+.right-0 {
+  right: 0;
+}
 
- /* Slick Dots */
+/* Slick Dots */
 
- .slick-dots{
-   display: flex;
-   justify-content: center;
-   margin: 0;
-   padding: 1rem 0;
-   list-style-type: none;
-   position: absolute;
-   bottom: 0;
-   right: 50%;
- }
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+}
 
- .slick-dots li{
-   margin: 0 0.6rem;
- }
+.slick-dots li {
+  margin: 0 0.6rem;
+}
 
- .slick-dots button{
-   display: block;
-   width: .5rem;
-   height: 0.5rem;
-   padding: 0;
-   border: none;
-   background-color: white;
-   text-indent: -99999px;
-   border-radius: 100%;
- }
+.slick-dots button {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border: none;
+  background-color: white;
+  text-indent: -99999px;
+  border-radius: 100%;
+}
 
- .slick-dots li.slick-active button{
-   transform: scale(2.5);
-   box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.205);
- }
+.slick-dots li.slick-active button {
+  transform: scale(2.5);
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.205);
+}
 
- /* Seconde Slider */
+/* Seconde Slider */
 
- .site-slider-two{
-   position: relative;
-   height: 30%;
- }
+.site-slider-two {
+  position: relative;
+  height: 30%;
+}
 
- .site-slider-two .product{
-   height: 25rem;
-   position: relative;
-   overflow: hidden;
- }
+.site-slider-two .product {
+  height: 25rem;
+  position: relative;
+  overflow: hidden;
+}
 
- .site-slider-two .product img{
-   width: 90%;
-   margin: auto;
-   /* height: 220px;
+.site-slider-two .product img {
+  width: 90%;
+  margin: auto;
+  /* height: 220px;
    width: 170px;
    border-radius: 15px; */
- } 
+}
 
- .site-btn.btn-span{
-   padding: 0.8rem 1.4rem;
-   border-radius: 4rem;
-   border: 1px solid var(--border);
-   background-color: #fff;
-   color: var(--light-gray);
- }
+.site-btn.btn-span {
+  padding: 0.8rem 1.4rem;
+  border-radius: 4rem;
+  border: 1px solid var(--border);
+  background: linear-gradient(120deg, #d2b23e 0%, #973200 100%);
+  color: white;
+}
 
-.slider-two .slick-track .product:hover span{
-  background-color:var(--primary-color);
-} 
+.slider-two .slick-track .product:hover span {
+  background: linear-gradient(120deg, #973200 0%, #d2b23e 100%);
+}
 
-.hr{
+.hr {
   border: 1px dotted var(--border);
 }
 
 /* Features Sections */
-.container .features{
+.container .features {
   padding: 3rem 0;
 }
 
-.container .features h1{
+.container .features h1 {
   font-family: var(--gugi);
 }
 
-.container .features p{
+.container .features p {
   padding: 0.5% 25%;
   font-size: 0.9em;
 }
 
 /* Third Slider */
-.site-slider-three{
+.site-slider-three {
   position: relative;
   margin-bottom: 5rem;
 }
 
-.site-slider-three .product{
+.site-slider-three .product {
   height: 100%;
   padding: 0em;
 }
 
-.site-slider-three .cart-details{
+.site-slider-three .cart-details {
   margin-top: 0.5rem;
   padding: 0 2rem;
 }
 
-.rating i{
+.rating i {
   font-size: 0.7rem;
   color: lightblue;
 }
 
-.site-slider-three .pro-price span{
+.site-slider-three .pro-price span {
   color: var(--text-color);
 }
 
-.product .cart .site-btn:hover{
+.product .cart .site-btn:hover {
   background: var(--primary-color);
   color: white;
 }
 
 /* Slider Four */
-.site-slider-four{
+.site-slider-four {
   position: relative;
   margin-top: 3rem;
 }
 
-.slider-four{
+.slider-four {
   padding: 0 0.4rem;
 }
 
-.slider-four .product img{
+.slider-four .product img {
   width: 80%;
   border: 1px solid var(--border);
 }
 
-.newseller{
+.newseller {
   margin-top: 8rem;
 }
 
 /* Brand */
-.slider-brand{
+.slider-brand {
   position: relative;
   margin: 4rem 0;
 }
 
-div.slider-brand .prev{
+div.slider-brand .prev {
   margin-left: 0rem;
 }
 
 /* Our Cliente */
-.slider-client{
+.slider-client {
   height: 100%;
   width: 100%;
   background: url("../assets/cup-desk-drink-434337.jpg");
@@ -271,59 +273,57 @@ div.slider-brand .prev{
   overflow: hidden;
 }
 
-.slider-box{
+.slider-box {
   widows: 80%;
-height: 100% ;
-background: rgba(255,255,255,0.350);
-margin: auto;
-border-radius: 0.4rem;
-
+  height: 100%;
+  background: rgba(255, 255, 255, 0.35);
+  margin: auto;
+  border-radius: 0.4rem;
 }
 
-.slider-six p{
+.slider-six p {
   padding: 2% 15%;
   line-height: 32px;
   font-family: var(--roboto);
   color: var(--light-gray);
 }
 
-.slider-six .slick-dots{
+.slider-six .slick-dots {
   bottom: -4rem;
   left: 49%;
 }
 
-.slider-six .slick-dots button{
+.slider-six .slick-dots button {
   background: var(--border);
 }
 
-.slider-six .slick-dots li.slick-active button{
-transform: scale(2.5);
-background-color: var(--primary-color);
-box-shadow: 1px 1px 2px 1px var(--border);
+.slider-six .slick-dots li.slick-active button {
+  transform: scale(2.5);
+  background: var(--primary-color);
+  box-shadow: 1px 1px 2px 1px var(--border);
 }
 
 /* Facilities */
-.site-info{
+.site-info {
   margin-top: 3rem;
 }
 
 /* Footer */
-footer h4{
+footer h4 {
   padding: 4rem 1rem 0;
   font-family: var(--roboto);
 }
 
-footer .social i{
+footer .social i {
   padding: 3% 1%;
 }
-footer .col-md-2 small{
+footer .col-md-2 small {
   color: var(--light-gray);
   padding: 0.7em 0;
 }
 
-footer .follow-us div{
+footer .follow-us div {
   width: 33%;
   height: 8rem;
   background-color: lightblue;
-
 }
