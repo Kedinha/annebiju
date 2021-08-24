@@ -68,8 +68,8 @@ header .site-title {
 
 .navbar-nav .nav-link {
   font-size: 0.9em;
-  /* color: var(--light-gray) !important; */
-  border: 1px var(--border);
+  color: white !important;
+  /*border: 1px solid var(--border);*/
   border-radius: 4rem;
   margin: 0 0.4rem;
 }
@@ -81,7 +81,6 @@ header .site-title {
 .navbar-nav .nav-item .nav-link {
   background: linear-gradient(120deg, #973200 0%, #d2b23e 100%) !important;
   padding: 0 1.3em;
-  color: white;
 }
 
 .navbar-nav .basket-icon {
